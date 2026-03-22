@@ -40,22 +40,41 @@
         </div>
 
         <div class="tab-pane fade" id="tab2">
-            <div class="card p-4">
-                <h4>📊 來客統計回報</h4>
-                <form id="form2">
-                    <input type="hidden" name="type" value="來客統計">
-                    <div class="row g-2 mb-3">
-                        <div class="col-6"><label>門市來客</label><input type="number" name="walkin" class="form-control" value="0"></div>
-                        <div class="col-6"><label>電話洽詢</label><input type="number" name="phone" class="form-control" value="0"></div>
-                        <div class="col-6"><label>官網/粉專</label><input type="number" name="web" class="form-control" value="0"></div>
-                        <div class="col-6"><label>門市LINE@</label><input type="number" name="line" class="form-control" value="0"></div>
-                    </div>
-                    <div class="mb-3"><label>當日成交數</label><input type="number" name="deals" class="form-control" value="0"></div>
-                    <div class="mb-3"><label>現場人員</label><input type="text" name="staff" class="form-control" required></div>
-                    <button type="submit" class="btn btn-success w-100">上傳報表</button>
-                </form>
+    <div class="card p-4">
+        <h4>📊 來客統計回報</h4>
+        <form id="form2">
+            <input type="hidden" name="type" value="來客統計">
+            
+            <div class="row g-2 mb-3">
+                <div class="col-6"><label class="form-label">門市來客</label><input type="number" name="walkin" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">電話洽詢</label><input type="number" name="phone" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">官網/粉專</label><input type="number" name="web" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">門市LINE@</label><input type="number" name="line" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">自洽客戶</label><input type="number" name="self" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">其他</label><input type="number" name="other" class="form-control" value="0"></div>
             </div>
-        </div>
+            
+            <hr>
+
+            <div class="row g-2 mb-3">
+                <div class="col-6"><label class="form-label">當日諮詢數</label><input type="number" name="consults" class="form-control" value="0"></div>
+                <div class="col-6"><label class="form-label">當日成交數</label><input type="number" name="deals" class="form-control" value="0"></div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">現場人員</label>
+                <input type="text" name="staff" class="form-control" required placeholder="請輸入姓名">
+            </div>
+            
+            <div class="mb-3">
+                <label class="form-label">備註</label>
+                <textarea name="note" class="form-control" rows="2" placeholder="如有特殊狀況請註記於此"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-success w-100">上傳當日統計</button>
+        </form>
+    </div>
+</div>
 
         <div class="tab-pane fade" id="tab3">
             <div class="card p-4">
